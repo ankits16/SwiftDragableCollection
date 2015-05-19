@@ -13,6 +13,28 @@
 		62A0DADF1B0B3E4C00B454C6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62A0DADE1B0B3E4C00B454C6 /* Images.xcassets */; };
 		62A0DAE21B0B3E4C00B454C6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62A0DAE01B0B3E4C00B454C6 /* LaunchScreen.xib */; };
 		62A0DAEE1B0B3E4C00B454C6 /* DragableCollectionSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A0DAED1B0B3E4C00B454C6 /* DragableCollectionSwiftTests.swift */; };
+		62A0DB071B0B3EB300B454C6 /* DragabbleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 62A0DAFB1B0B3EB300B454C6 /* DragabbleCell.m */; };
+		62A0DB081B0B3EB300B454C6 /* DragabbleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62A0DAFC1B0B3EB300B454C6 /* DragabbleCell.xib */; };
+		62A0DB091B0B3EB300B454C6 /* DECollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 62A0DAFE1B0B3EB300B454C6 /* DECollectionView.m */; };
+		62A0DB0A1B0B3EB300B454C6 /* OptionsLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 62A0DB001B0B3EB300B454C6 /* OptionsLayout.m */; };
+		62A0DB0B1B0B3EB300B454C6 /* LXReorderableCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 62A0DB021B0B3EB300B454C6 /* LXReorderableCollectionViewFlowLayout.m */; };
+		62A0DB0C1B0B3EB300B454C6 /* Option.m in Sources */ = {isa = PBXBuildFile; fileRef = 62A0DB061B0B3EB300B454C6 /* Option.m */; };
+		62A0DB1E1B0B3EEC00B454C6 /* 03.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 62A0DB0E1B0B3EEC00B454C6 /* 03.jpg */; };
+		62A0DB1F1B0B3EEC00B454C6 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 62A0DB0F1B0B3EEC00B454C6 /* 1.jpg */; };
+		62A0DB201B0B3EEC00B454C6 /* 10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 62A0DB101B0B3EEC00B454C6 /* 10.jpg */; };
+		62A0DB211B0B3EEC00B454C6 /* 11.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 62A0DB111B0B3EEC00B454C6 /* 11.jpg */; };
+		62A0DB221B0B3EEC00B454C6 /* 12.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 62A0DB121B0B3EEC00B454C6 /* 12.jpg */; };
+		62A0DB231B0B3EEC00B454C6 /* 13.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 62A0DB131B0B3EEC00B454C6 /* 13.jpg */; };
+		62A0DB241B0B3EEC00B454C6 /* 14.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 62A0DB141B0B3EEC00B454C6 /* 14.jpg */; };
+		62A0DB251B0B3EEC00B454C6 /* 15.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 62A0DB151B0B3EEC00B454C6 /* 15.jpg */; };
+		62A0DB261B0B3EEC00B454C6 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 62A0DB161B0B3EEC00B454C6 /* 2.jpg */; };
+		62A0DB271B0B3EEC00B454C6 /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 62A0DB171B0B3EEC00B454C6 /* 3.jpg */; };
+		62A0DB281B0B3EEC00B454C6 /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 62A0DB181B0B3EEC00B454C6 /* 4.jpg */; };
+		62A0DB291B0B3EEC00B454C6 /* 5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 62A0DB191B0B3EEC00B454C6 /* 5.jpg */; };
+		62A0DB2A1B0B3EEC00B454C6 /* 6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 62A0DB1A1B0B3EEC00B454C6 /* 6.jpg */; };
+		62A0DB2B1B0B3EEC00B454C6 /* 7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 62A0DB1B1B0B3EEC00B454C6 /* 7.jpg */; };
+		62A0DB2C1B0B3EEC00B454C6 /* 8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 62A0DB1C1B0B3EEC00B454C6 /* 8.jpg */; };
+		62A0DB2D1B0B3EEC00B454C6 /* 9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 62A0DB1D1B0B3EEC00B454C6 /* 9.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +58,36 @@
 		62A0DAE71B0B3E4C00B454C6 /* DragableCollectionSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DragableCollectionSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		62A0DAEC1B0B3E4C00B454C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		62A0DAED1B0B3E4C00B454C6 /* DragableCollectionSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragableCollectionSwiftTests.swift; sourceTree = "<group>"; };
+		62A0DAF91B0B3EB200B454C6 /* DragableCollectionSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DragableCollectionSwift-Bridging-Header.h"; sourceTree = "<group>"; };
+		62A0DAFA1B0B3EB300B454C6 /* DragabbleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DragabbleCell.h; sourceTree = "<group>"; };
+		62A0DAFB1B0B3EB300B454C6 /* DragabbleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DragabbleCell.m; sourceTree = "<group>"; };
+		62A0DAFC1B0B3EB300B454C6 /* DragabbleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DragabbleCell.xib; sourceTree = "<group>"; };
+		62A0DAFD1B0B3EB300B454C6 /* DECollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DECollectionView.h; sourceTree = "<group>"; };
+		62A0DAFE1B0B3EB300B454C6 /* DECollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DECollectionView.m; sourceTree = "<group>"; };
+		62A0DAFF1B0B3EB300B454C6 /* OptionsLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OptionsLayout.h; sourceTree = "<group>"; };
+		62A0DB001B0B3EB300B454C6 /* OptionsLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OptionsLayout.m; sourceTree = "<group>"; };
+		62A0DB011B0B3EB300B454C6 /* LXReorderableCollectionViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXReorderableCollectionViewFlowLayout.h; sourceTree = "<group>"; };
+		62A0DB021B0B3EB300B454C6 /* LXReorderableCollectionViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXReorderableCollectionViewFlowLayout.m; sourceTree = "<group>"; };
+		62A0DB031B0B3EB300B454C6 /* DECollectionViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DECollectionViewDelegate.h; sourceTree = "<group>"; };
+		62A0DB041B0B3EB300B454C6 /* DECollectionViewDatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DECollectionViewDatasource.h; sourceTree = "<group>"; };
+		62A0DB051B0B3EB300B454C6 /* Option.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Option.h; sourceTree = "<group>"; };
+		62A0DB061B0B3EB300B454C6 /* Option.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Option.m; sourceTree = "<group>"; };
+		62A0DB0E1B0B3EEC00B454C6 /* 03.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 03.jpg; sourceTree = "<group>"; };
+		62A0DB0F1B0B3EEC00B454C6 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		62A0DB101B0B3EEC00B454C6 /* 10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 10.jpg; sourceTree = "<group>"; };
+		62A0DB111B0B3EEC00B454C6 /* 11.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 11.jpg; sourceTree = "<group>"; };
+		62A0DB121B0B3EEC00B454C6 /* 12.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 12.jpg; sourceTree = "<group>"; };
+		62A0DB131B0B3EEC00B454C6 /* 13.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 13.jpg; sourceTree = "<group>"; };
+		62A0DB141B0B3EEC00B454C6 /* 14.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 14.jpg; sourceTree = "<group>"; };
+		62A0DB151B0B3EEC00B454C6 /* 15.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 15.jpg; sourceTree = "<group>"; };
+		62A0DB161B0B3EEC00B454C6 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
+		62A0DB171B0B3EEC00B454C6 /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
+		62A0DB181B0B3EEC00B454C6 /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpg; sourceTree = "<group>"; };
+		62A0DB191B0B3EEC00B454C6 /* 5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 5.jpg; sourceTree = "<group>"; };
+		62A0DB1A1B0B3EEC00B454C6 /* 6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 6.jpg; sourceTree = "<group>"; };
+		62A0DB1B1B0B3EEC00B454C6 /* 7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 7.jpg; sourceTree = "<group>"; };
+		62A0DB1C1B0B3EEC00B454C6 /* 8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 8.jpg; sourceTree = "<group>"; };
+		62A0DB1D1B0B3EEC00B454C6 /* 9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 9.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +129,9 @@
 		62A0DAD41B0B3E4C00B454C6 /* DragableCollectionSwift */ = {
 			isa = PBXGroup;
 			children = (
+				62A0DB0D1B0B3EEC00B454C6 /* images */,
+				62A0DAF81B0B3E9300B454C6 /* DragableCV swift */,
+				62A0DAF71B0B3E7C00B454C6 /* DragableCV ObjC */,
 				62A0DAD71B0B3E4C00B454C6 /* AppDelegate.swift */,
 				62A0DAD91B0B3E4C00B454C6 /* ViewController.swift */,
 				62A0DADB1B0B3E4C00B454C6 /* Main.storyboard */,
@@ -110,6 +165,57 @@
 				62A0DAEC1B0B3E4C00B454C6 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		62A0DAF71B0B3E7C00B454C6 /* DragableCV ObjC */ = {
+			isa = PBXGroup;
+			children = (
+				62A0DAFA1B0B3EB300B454C6 /* DragabbleCell.h */,
+				62A0DAFB1B0B3EB300B454C6 /* DragabbleCell.m */,
+				62A0DAFC1B0B3EB300B454C6 /* DragabbleCell.xib */,
+				62A0DAFD1B0B3EB300B454C6 /* DECollectionView.h */,
+				62A0DAFE1B0B3EB300B454C6 /* DECollectionView.m */,
+				62A0DAFF1B0B3EB300B454C6 /* OptionsLayout.h */,
+				62A0DB001B0B3EB300B454C6 /* OptionsLayout.m */,
+				62A0DB011B0B3EB300B454C6 /* LXReorderableCollectionViewFlowLayout.h */,
+				62A0DB021B0B3EB300B454C6 /* LXReorderableCollectionViewFlowLayout.m */,
+				62A0DB031B0B3EB300B454C6 /* DECollectionViewDelegate.h */,
+				62A0DB041B0B3EB300B454C6 /* DECollectionViewDatasource.h */,
+				62A0DB051B0B3EB300B454C6 /* Option.h */,
+				62A0DB061B0B3EB300B454C6 /* Option.m */,
+				62A0DAF91B0B3EB200B454C6 /* DragableCollectionSwift-Bridging-Header.h */,
+			);
+			name = "DragableCV ObjC";
+			sourceTree = "<group>";
+		};
+		62A0DAF81B0B3E9300B454C6 /* DragableCV swift */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "DragableCV swift";
+			sourceTree = "<group>";
+		};
+		62A0DB0D1B0B3EEC00B454C6 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				62A0DB0E1B0B3EEC00B454C6 /* 03.jpg */,
+				62A0DB0F1B0B3EEC00B454C6 /* 1.jpg */,
+				62A0DB101B0B3EEC00B454C6 /* 10.jpg */,
+				62A0DB111B0B3EEC00B454C6 /* 11.jpg */,
+				62A0DB121B0B3EEC00B454C6 /* 12.jpg */,
+				62A0DB131B0B3EEC00B454C6 /* 13.jpg */,
+				62A0DB141B0B3EEC00B454C6 /* 14.jpg */,
+				62A0DB151B0B3EEC00B454C6 /* 15.jpg */,
+				62A0DB161B0B3EEC00B454C6 /* 2.jpg */,
+				62A0DB171B0B3EEC00B454C6 /* 3.jpg */,
+				62A0DB181B0B3EEC00B454C6 /* 4.jpg */,
+				62A0DB191B0B3EEC00B454C6 /* 5.jpg */,
+				62A0DB1A1B0B3EEC00B454C6 /* 6.jpg */,
+				62A0DB1B1B0B3EEC00B454C6 /* 7.jpg */,
+				62A0DB1C1B0B3EEC00B454C6 /* 8.jpg */,
+				62A0DB1D1B0B3EEC00B454C6 /* 9.jpg */,
+			);
+			path = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,9 +298,26 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62A0DB2C1B0B3EEC00B454C6 /* 8.jpg in Resources */,
+				62A0DB1E1B0B3EEC00B454C6 /* 03.jpg in Resources */,
+				62A0DB201B0B3EEC00B454C6 /* 10.jpg in Resources */,
+				62A0DB241B0B3EEC00B454C6 /* 14.jpg in Resources */,
+				62A0DB281B0B3EEC00B454C6 /* 4.jpg in Resources */,
+				62A0DB221B0B3EEC00B454C6 /* 12.jpg in Resources */,
 				62A0DADD1B0B3E4C00B454C6 /* Main.storyboard in Resources */,
+				62A0DB271B0B3EEC00B454C6 /* 3.jpg in Resources */,
 				62A0DAE21B0B3E4C00B454C6 /* LaunchScreen.xib in Resources */,
+				62A0DB231B0B3EEC00B454C6 /* 13.jpg in Resources */,
+				62A0DB2A1B0B3EEC00B454C6 /* 6.jpg in Resources */,
+				62A0DB291B0B3EEC00B454C6 /* 5.jpg in Resources */,
+				62A0DB1F1B0B3EEC00B454C6 /* 1.jpg in Resources */,
+				62A0DB2D1B0B3EEC00B454C6 /* 9.jpg in Resources */,
+				62A0DB081B0B3EB300B454C6 /* DragabbleCell.xib in Resources */,
+				62A0DB261B0B3EEC00B454C6 /* 2.jpg in Resources */,
 				62A0DADF1B0B3E4C00B454C6 /* Images.xcassets in Resources */,
+				62A0DB2B1B0B3EEC00B454C6 /* 7.jpg in Resources */,
+				62A0DB211B0B3EEC00B454C6 /* 11.jpg in Resources */,
+				62A0DB251B0B3EEC00B454C6 /* 15.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,6 +335,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62A0DB0C1B0B3EB300B454C6 /* Option.m in Sources */,
+				62A0DB0B1B0B3EB300B454C6 /* LXReorderableCollectionViewFlowLayout.m in Sources */,
+				62A0DB0A1B0B3EB300B454C6 /* OptionsLayout.m in Sources */,
+				62A0DB071B0B3EB300B454C6 /* DragabbleCell.m in Sources */,
+				62A0DB091B0B3EB300B454C6 /* DECollectionView.m in Sources */,
 				62A0DADA1B0B3E4C00B454C6 /* ViewController.swift in Sources */,
 				62A0DAD81B0B3E4C00B454C6 /* AppDelegate.swift in Sources */,
 			);
@@ -336,9 +464,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = DragableCollectionSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DragableCollectionSwift/DragableCollectionSwift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -346,9 +477,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = DragableCollectionSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DragableCollectionSwift/DragableCollectionSwift-Bridging-Header.h";
 			};
 			name = Release;
 		};
