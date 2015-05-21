@@ -10,4 +10,14 @@
 
 @implementation Option
 
+-(id) initWithTitle:(NSString*) title anImage:(UIImage*) optionImage{
+    self = [super init];
+    if (self) {
+        self.optionTitle = title;
+        self.optionImage = optionImage;
+        self.isPhantom = NO;
+    }
+    
+    return self;
+}
 @end
