@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		62115FEF1B0DB0960003CCB1 /* DragableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62115FED1B0DB0960003CCB1 /* DragableCell.swift */; };
+		62115FF01B0DB0960003CCB1 /* DragableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62115FEE1B0DB0960003CCB1 /* DragableCell.xib */; };
+		62115FF21B0DB0DE0003CCB1 /* DragableCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62115FF11B0DB0DE0003CCB1 /* DragableCollectionView.swift */; };
+		62115FF41B0DB11E0003CCB1 /* DragableCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62115FF31B0DB11E0003CCB1 /* DragableCollectionViewLayout.swift */; };
 		62A0DAD81B0B3E4C00B454C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A0DAD71B0B3E4C00B454C6 /* AppDelegate.swift */; };
 		62A0DADA1B0B3E4C00B454C6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A0DAD91B0B3E4C00B454C6 /* ViewController.swift */; };
 		62A0DADD1B0B3E4C00B454C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62A0DADB1B0B3E4C00B454C6 /* Main.storyboard */; };
@@ -48,6 +52,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		62115FED1B0DB0960003CCB1 /* DragableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DragableCell.swift; sourceTree = "<group>"; };
+		62115FEE1B0DB0960003CCB1 /* DragableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DragableCell.xib; sourceTree = "<group>"; };
+		62115FF11B0DB0DE0003CCB1 /* DragableCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DragableCollectionView.swift; sourceTree = "<group>"; };
+		62115FF31B0DB11E0003CCB1 /* DragableCollectionViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DragableCollectionViewLayout.swift; sourceTree = "<group>"; };
 		62A0DAD21B0B3E4C00B454C6 /* DragableCollectionSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DragableCollectionSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		62A0DAD61B0B3E4C00B454C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		62A0DAD71B0B3E4C00B454C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -191,6 +199,10 @@
 		62A0DAF81B0B3E9300B454C6 /* DragableCV swift */ = {
 			isa = PBXGroup;
 			children = (
+				62115FED1B0DB0960003CCB1 /* DragableCell.swift */,
+				62115FEE1B0DB0960003CCB1 /* DragableCell.xib */,
+				62115FF11B0DB0DE0003CCB1 /* DragableCollectionView.swift */,
+				62115FF31B0DB11E0003CCB1 /* DragableCollectionViewLayout.swift */,
 			);
 			name = "DragableCV swift";
 			sourceTree = "<group>";
@@ -315,6 +327,7 @@
 				62A0DB081B0B3EB300B454C6 /* DragabbleCell.xib in Resources */,
 				62A0DB261B0B3EEC00B454C6 /* 2.jpg in Resources */,
 				62A0DADF1B0B3E4C00B454C6 /* Images.xcassets in Resources */,
+				62115FF01B0DB0960003CCB1 /* DragableCell.xib in Resources */,
 				62A0DB2B1B0B3EEC00B454C6 /* 7.jpg in Resources */,
 				62A0DB211B0B3EEC00B454C6 /* 11.jpg in Resources */,
 				62A0DB251B0B3EEC00B454C6 /* 15.jpg in Resources */,
@@ -337,11 +350,14 @@
 			files = (
 				62A0DB0C1B0B3EB300B454C6 /* Option.m in Sources */,
 				62A0DB0B1B0B3EB300B454C6 /* LXReorderableCollectionViewFlowLayout.m in Sources */,
+				62115FF41B0DB11E0003CCB1 /* DragableCollectionViewLayout.swift in Sources */,
 				62A0DB0A1B0B3EB300B454C6 /* OptionsLayout.m in Sources */,
 				62A0DB071B0B3EB300B454C6 /* DragabbleCell.m in Sources */,
+				62115FF21B0DB0DE0003CCB1 /* DragableCollectionView.swift in Sources */,
 				62A0DB091B0B3EB300B454C6 /* DECollectionView.m in Sources */,
 				62A0DADA1B0B3E4C00B454C6 /* ViewController.swift in Sources */,
 				62A0DAD81B0B3E4C00B454C6 /* AppDelegate.swift in Sources */,
+				62115FEF1B0DB0960003CCB1 /* DragableCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -538,6 +554,7 @@
 				62A0DAF31B0B3E4C00B454C6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		62A0DAF41B0B3E4C00B454C6 /* Build configuration list for PBXNativeTarget "DragableCollectionSwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -546,6 +563,7 @@
 				62A0DAF61B0B3E4C00B454C6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
