@@ -11,13 +11,25 @@ import UIKit
 class DragableCell: UICollectionViewCell {
     
     var index:Int?
-    var optionImageView:UIImageView?
-    var optionLbl:UILabel?
+    @IBOutlet weak var optionImageView:UIImageView?
+    @IBOutlet weak var optionLbl:UILabel?
     
+//    override init(frame: CGRect) {
+//        super.init(frame: frame)
+//        
+//        let views : NSArray? = NSBundle.mainBundle().loadNibNamed("DragableCell", owner: self, options: nil) as NSArray
+//       // self = views.objectAtIndex(0)
+//        
+//    }
+//
+//    required init(coder aDecoder: NSCoder) {
+//        super.init(coder: aDecoder)
+//    }
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        // Initialization code.
+        
     }
 
     func startQuivering(){

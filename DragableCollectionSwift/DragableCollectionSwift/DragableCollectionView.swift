@@ -25,6 +25,7 @@ enum DEAutoScrollDirection{
 
 @objc protocol DECollectionViewDelegate{
     
+    optional func beginEditing (collectionView:DragableCollectionView?, gestureRecognizer:UILongPressGestureRecognizer?)
 }
 
 class DragableCollectionView: UICollectionView, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, UIScrollViewDelegate, UIGestureRecognizerDelegate {
@@ -82,13 +83,19 @@ class DragableCollectionView: UICollectionView, UICollectionViewDataSource, UICo
     
     func setupCollectionView(){
         
-        self.registerClass( DragableCell.self, forCellWithReuseIdentifier: "DragableCell")
+        //self.registerClass( DragableCell.self, forCellWithReuseIdentifier: "DragableCell")
+        self.registerNib(UINib(nibName: "DragableCell", bundle: nil), forCellWithReuseIdentifier: "DragableCell")
         let flowloayout = DragableCollectionViewLayout()
         self.setCollectionViewLayout(flowloayout, animated: true)
         self.dataSource = self
         self.delegate = self
         scrollingTriggerEdgeInsets = UIEdgeInsetsMake(100, 100, 100, 100)
         phantomCellIndex = NSNotFound
+        self.configureGestures()
+        
+    }
+    
+    func configureGestures(){
         
     }
     
@@ -110,15 +117,41 @@ class DragableCollectionView: UICollectionView, UICollectionViewDataSource, UICo
     // The cell that is returned must be retrieved from a call to -dequeueReusableCellWithReuseIdentifier:forIndexPath:
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell{
         var cell = collectionView.dequeueReusableCellWithReuseIdentifier("DragableCell", forIndexPath: indexPath) as DragableCell
-        let anOption = self.optionsArr!.objectAtIndex(indexPath.row)
-        cell.
+        let anOption = self.optionsArr!.objectAtIndex(indexPath.row) as Option
+        cell.optionImageView?.image = anOption.optionImage
+        cell.optionLbl?.text = anOption.optionTitle
         
+        let registeredGestures : NSArray? = cell.gestureRecognizers
+        
+        if ((registeredGestures?) == nil) {
+            
+            NSLog("long press added")
+            let longPress = UILongPressGestureRecognizer(target: self, action: Selector("handlLongPress"))
+            cell.addGestureRecognizer(longPress)
+        }
+        
+
+        
+        if self.isEditable{
+            cell.startQuivering()
+        }else{
+            cell.stopQuivering()
+        }
         return cell
+    }
+    
+    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+        return CGSizeMake(150, 150)
     }
     // MARK:- scrollView delegate
     
-    // MARK:- gesture recognizer delegate
+    // MARK:- gesture recognizer and delegate
     
+    func handlLongPress(){
+        NSLog("long pressed")
+        self.isEditable = true
+        self.reloadData()
+    }
     
 
     
