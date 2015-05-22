@@ -67,18 +67,21 @@ class DragableCollectionView: UICollectionView, UICollectionViewDataSource, UICo
     }
     */
     
-//    override init(frame: CGRect) {
-//        self.setupCollectionView()
-//    }
-//
-//    required init(coder aDecoder: NSCoder) {
-//        //fatalError("init(coder:) has not been implemented")
-//        self.setupCollectionView()
-//    }
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        self.setupCollectionView()
+    }
+
+    required init(coder aDecoder: NSCoder) {
+        //fatalError("init(coder:) has not been implemented")
+        super.init(coder: aDecoder)
+        self.setupCollectionView()
+    }
     
     // MARK:- setup
     
     func setupCollectionView(){
+        
         self.registerClass( DragableCell.self, forCellWithReuseIdentifier: "DragableCell")
         let flowloayout = DragableCollectionViewLayout()
         self.setCollectionViewLayout(flowloayout, animated: true)
@@ -100,14 +103,17 @@ class DragableCollectionView: UICollectionView, UICollectionViewDataSource, UICo
     
     // MARK:- collectionView dataSource/delegate/lowlayout
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int{
-        return 0;
+        
+        return self.optionsArr!.count
     }
     
     // The cell that is returned must be retrieved from a call to -dequeueReusableCellWithReuseIdentifier:forIndexPath:
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell{
-        var cell : UICollectionViewCell?
+        var cell = collectionView.dequeueReusableCellWithReuseIdentifier("DragableCell", forIndexPath: indexPath) as DragableCell
+        let anOption = self.optionsArr!.objectAtIndex(indexPath.row)
+        cell.
         
-        return cell!
+        return cell
     }
     // MARK:- scrollView delegate
     
