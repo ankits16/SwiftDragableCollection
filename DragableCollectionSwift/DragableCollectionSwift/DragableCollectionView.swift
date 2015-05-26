@@ -96,7 +96,8 @@ class DragableCollectionView: UICollectionView, UICollectionViewDataSource, UICo
     }
     
     func configureGestures(){
-        
+        let tapGesture = UITapGestureRecognizer(target: self, action: Selector("handleTapGesture"))
+        self.addGestureRecognizer(tapGesture)
     }
     
     // MARK:-  reload
@@ -106,6 +107,7 @@ class DragableCollectionView: UICollectionView, UICollectionViewDataSource, UICo
             NSLog("not initialised")
             self.optionsArr = self.dragEnableCollectionDatasource?.optionsArrayforCollectionView().mutableCopy() as? NSMutableArray
         }
+        super.reloadData()
     }
     
     // MARK:- collectionView dataSource/delegate/lowlayout
@@ -131,6 +133,7 @@ class DragableCollectionView: UICollectionView, UICollectionViewDataSource, UICo
         }
         
 
+         //cell.startQuivering()
         
         if self.isEditable{
             cell.startQuivering()
@@ -153,6 +156,10 @@ class DragableCollectionView: UICollectionView, UICollectionViewDataSource, UICo
         self.reloadData()
     }
     
+    func handleTapGesture(){
+        self.isEditable = false
+        self.reloadData()
+    }
 
     
 }

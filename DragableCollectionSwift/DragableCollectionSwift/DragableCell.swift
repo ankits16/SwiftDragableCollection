@@ -33,7 +33,7 @@ class DragableCell: UICollectionViewCell {
     }
 
     func startQuivering(){
-        let quiverAnim = CABasicAnimation(keyPath: "animationWithKeyPath")
+        let quiverAnim = CABasicAnimation(keyPath: "transform.rotation")
         
         let startAngle = (-2) * M_PI/180.0
         let stopAngle = -startAngle
