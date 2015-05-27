@@ -21,11 +21,14 @@ enum DEAutoScrollDirection{
     func optionsArrayforCollectionView() -> NSArray;
     optional func willMoveItem (collectionView:DragableCollectionView?, fromIndexpath:NSIndexPath?, toIndexpath:NSIndexPath?)
     optional func didMoveItem (collectionView:DragableCollectionView?, fromIndexpath:NSIndexPath?, toIndexpath:NSIndexPath?)
+    optional func canMoveItemAtIndexPath (collectionView: DragableCollectionView?, targetIndexPath: NSIndexPath?) -> Bool
+    
 }
 
 @objc protocol DECollectionViewDelegate{
     
     optional func beginEditing (collectionView:DragableCollectionView?, gestureRecognizer:UILongPressGestureRecognizer?)
+    
 }
 
 class DragableCollectionView: UICollectionView, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, UIScrollViewDelegate, UIGestureRecognizerDelegate {
