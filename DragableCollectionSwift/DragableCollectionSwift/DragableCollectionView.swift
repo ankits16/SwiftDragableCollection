@@ -8,13 +8,7 @@
 
 import UIKit
 
-enum DEAutoScrollDirection{
-    case DEAutoScrollDirectionUnknown
-    case DEAutoScrollDirectionUp
-    case DEAutoScrollDirectionDown
-    case DEAutoScrollDirectionLeft
-    case DEAutoScrollDirectionRight
-}
+
 
 @objc protocol DECollectionViewDatasource{
     
@@ -70,6 +64,8 @@ class DragableCollectionView: UICollectionView, UICollectionViewDataSource, UICo
         // Drawing code
     }
     */
+    
+    //MARK:- init
     
     override init(frame: CGRect) {
         super.init(frame: frame)
